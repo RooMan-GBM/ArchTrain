@@ -1,7 +1,7 @@
 CC=gcc
-CFLAGS=-I./include
-OUTFILE=./dist/archtrain
-SRC=./src/
+CFLAGS=-I.
+OUTFILE=archtrain
+SRC=main.c
 all:
-	$(CC) $(SRC)*.c -o $(OUTFILE) $(CFLAGS)
+	$(CC) $(SRC) -o $(OUTFILE) $(CFLAGS)
 
